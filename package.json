@@ -1,0 +1,12 @@
+{
+	"type": "module",
+	"devDependencies": {
+		"@adraffy/blocksmith": "^0.1.50",
+		"@unruggable/gateways": "^0.1.5",
+		"ethers": "^6.13.5"
+	},
+	"scripts": {
+		"test": "node test/test.js",
+		"deploy": "node scripts/deploy.js"
+	}
+}

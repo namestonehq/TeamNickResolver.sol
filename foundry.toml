@@ -1,0 +1,12 @@
+[profile.default]
+
+libs = ["lib", "node_modules"]
+
+remappings = [
+	'@unruggable/gateways=node_modules/@unruggable/gateways/',
+	'@ensdomains/ens-contracts=lib/ens-contracts/',
+	'@openzeppelin/contracts=lib/openzeppelin-contracts/contracts/',
+]
+
+# forge i ensdomains/ens-contracts
+# forge i OpenZeppelin/openzeppelin-contracts@v5.2.0
