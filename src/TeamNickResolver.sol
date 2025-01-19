@@ -92,7 +92,7 @@ contract TeamNickResolver is IERC165, Ownable, IExtendedResolver, GatewayFetchTa
                     return abi.encode(_url);
                 } else if (keyhash == KEY_DESCRIPTION) {
                     selector = SEL_SUPPLY;
-                    req.setSlot(SLOT_SUPPLY).read();
+                    req.setSlot(SLOT_SUPPLY).read().setOutput(0);
                 } else {
                     return abi.encode("");
                 }
