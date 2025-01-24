@@ -8,6 +8,7 @@ const rl = createInterface({
 });
 
 const deployer = await FoundryDeployer.load({
+	provider: 'mainnet',
 	privateKey: await rl.question("Private Key (empty to simulate): "),
 });
 
